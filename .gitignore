@@ -243,3 +243,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+Blog.BotApplicationSampleDIA/Blog.BotApplicationSample.classdiagram
+Blog.BotApplicationSampleDIA/Blog.BotApplicationSample.classdiagram.layout
+*.modelproj
+Blog.BotApplicationSampleDIA/ModelDefinition/Blog.BotApplicationSampleDIA.uml

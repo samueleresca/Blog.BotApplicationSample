@@ -15,8 +15,12 @@ namespace Blog.BotApplicationSample
     public class MessagesController : ApiController
     {
 
-        public IVisionConnector visionConnector = new VisionConnector();
+        public IVisionConnector visionConnector;
 
+
+        public MessagesController()  {
+            visionConnector = new VisionConnector();
+        }
 
         /// <summary>
         /// POST: api/Messages
