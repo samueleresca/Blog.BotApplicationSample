@@ -25,7 +25,7 @@ namespace Blog.BotApplicationSample.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("8e7b114efd6649629b8ddc4c866d5168")]
+        [global::System.Configuration.DefaultSettingValueAttribute("YOURA")]
         public string VisionAPIKEY {
             get {
                 return ((string)(this["VisionAPIKEY"]));

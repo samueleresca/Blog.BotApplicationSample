@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -30,9 +31,15 @@ namespace Blog.BotApplicationSample.Vision
             {
                 //stores image url (parsed from attachment or message)
                 string uploadedImageUrl = activity.Attachments.First().ContentUrl; ;
-                uploadedImageUrl = HttpUtility.UrlDecode(uploadedImageUrl.Substring(uploadedImageUrl.IndexOf("file=") + 5));
+                uploadedImageUrl = HttpUtility.UrlDecode(uploadedImageUrl);
 
-                using (Stream imageFileStream = File.OpenRead(uploadedImageUrl))
+
+                //Create a WebRequest to get the file
+                var fileReq = HttpWebRequest.Create(uploadedImageUrl);
+                //Create a response for this request
+                var fileResp = (HttpWebResponse)fileReq.GetResponse();
+
+                using (Stream imageFileStream = fileResp.GetResponseStream())
                 {
                     try
                     {

@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.BotApplicationSample", "Blog.BotApplicationSample\Blog.BotApplicationSample.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Blog.BotApplicationSampleDIA", "Blog.BotApplicationSampleDIA\Blog.BotApplicationSampleDIA.modelproj", "{1613A926-4F11-4296-A59F-80FCB71E7873}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1613A926-4F11-4296-A59F-80FCB71E7873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1613A926-4F11-4296-A59F-80FCB71E7873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1613A926-4F11-4296-A59F-80FCB71E7873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1613A926-4F11-4296-A59F-80FCB71E7873}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
